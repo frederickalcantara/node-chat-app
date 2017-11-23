@@ -1,4 +1,3 @@
-const _ = require('lodash');
 
 // addUser(id, name, room)
 // removeUser(id)
@@ -19,7 +18,7 @@ class Users {
 		let user = this.getUser(id);
 
 		if (user) {
-			return user = _.remove(this.users, { id });
+			this.users = this.users.filter(user => user.id !== id);
 		}
 
 		return user;

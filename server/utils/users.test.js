@@ -19,7 +19,7 @@ describe('Users', () => {
 			id: '3',
 			name: 'Sean',
 			room: 'Node Course'
-		}];
+		}]
 	});
 
 	it('should add new user', () => {
@@ -35,9 +35,9 @@ describe('Users', () => {
 	});
 
 	it('should remove a user', () => {
-		let userId = '2';
-		let removedList = users.removeUser(userId);
-		expect(userId).toEqual('2');
+		let userId = '1';
+		let user = users.removeUser(userId);
+		expect(user).toBeTruthy();
 		expect(users.users.length).toBe(2);
 	});
 
