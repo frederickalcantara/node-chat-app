@@ -69,3 +69,6 @@ server.listen(port, () => {
 	console.log(`Server is up on port ${port}`);
 });
 
+// Make chat rooms case insensitive
+// Make usernames unique
+// Add a list of currently active chat rooms below the join chat room that you can join
